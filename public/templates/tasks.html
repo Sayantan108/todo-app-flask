@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Tasks{% endblock title %}
+{% block content %}
+
+<h1>My Tasks</h1>
+
+<a href="/completedtasks">
+    View Completed tasks
+</a>
+
+{% for task in tasks %}
+
+    <div class="card">
+        <div class="task_desc">
+            {{task.task_desc}}
+        </div> 
+        <form action="/completed" method="post">
+            <textarea hidden name="task_desc" id="task_desc" cols="30" rows="10">{{task.task_desc}}</textarea>
+            <input type="submit" value="Completed">
+        </form>
+
+    </div>
+
+
+{% endfor %}
+
+{% endblock content %}

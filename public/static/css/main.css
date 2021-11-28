@@ -1,0 +1,113 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ADE8F4;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 4rem;
+    color: #03045E;
+}
+
+textarea{
+    background-color: #CAF0F8;
+    font-size: large;
+    max-width: 600px;
+    min-width: 200px;
+    margin-bottom: 2em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    height: 100px;
+    border: transparent;
+    color:#023E8A;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+::placeholder{
+    color:#023E8A;
+}
+
+input{
+    height: 50px;
+    width: 100px;
+    font-size: medium;
+    background-color: #0096C7;
+    color:aliceblue;
+    font-weight: 700;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #03045E;
+    font-weight: 600;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+}
+
+.card{
+    background-color: #CAF0F8;
+    height: 120px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+
+.card .task_desc{
+    padding-top: 0.8em;
+    font-size: large;
+    font-weight: 500;
+    color:#023E8A;
+
+}
+
+.card form{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.card form input{
+    margin-right: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.completed{
+    height: 50px;
+    min-height: 50px;
+    min-width:300px;
+    background-color: #CAF0F8;
+    max-width: 500px;
+    width:600px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: large;
+    color: #023E8A;
+    font-weight: 600;
+    padding-top: 0.6em;
+    padding-bottom: 0.8em;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}

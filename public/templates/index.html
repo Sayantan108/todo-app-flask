@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<h1>To-Do App</h1>
+
+<form action="/add" method="post">
+
+    <textarea name="task_content" id="task_content" placeholder="Enter your task here" cols="80" rows="5"></textarea>
+    <input type="submit"value="Add Task">
+
+</form>
+
+
+
+<a href="/tasks">View tasks</a>
+
+{% endblock content %}

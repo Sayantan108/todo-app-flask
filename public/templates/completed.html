@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Completed Tasks{% endblock title %}
+
+{% block content %}
+<h1>Completed Tasks</h1>
+{% for task in tasks %}
+
+    <div class="card completed">
+        <div class="task_desc">
+            {{task.task_desc}}
+        </div> 
+    </div>
+
+{% endfor %}
+
+{% endblock content %}
